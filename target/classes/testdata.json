@@ -1,0 +1,72 @@
+{
+  "validUser": {
+    "username": "standard_user",
+    "password": "secret_sauce"
+  },
+  "lockedOutUser": {
+    "username": "locked_out_user",
+    "password": "secret_sauce",
+    "expectedErrorMessage": "Epic sadface: Sorry, this user has been locked out."
+  },
+  "invalidUser": {
+    "username": "invalid_user",
+    "password": "wrong_password",
+    "expectedErrorMessage": "Epic sadface: Username and password do not match any user in this service"
+  },
+  "emptyUser": {
+    "username": "",
+    "password": "",
+    "expectedErrorMessage": "Epic sadface: Username is required"
+  },
+  "products": {
+    "backpack": {
+      "name": "Sauce Labs Backpack",
+      "description": "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.",
+      "price": "$29.99"
+    },
+    "bikeLight": {
+      "name": "Sauce Labs Bike Light",
+      "description": "A red light isn't the desired state in testing but it is on a bike. A 3-mode lighting system will add excitement and feel-good vibes to your trail ride.",
+      "price": "$9.99"
+    },
+    "boltTShirt": {
+      "name": "Sauce Labs Bolt T-Shirt",
+      "description": "Get your testing superhero on with the Sauce Labs bolt T-shirt. Celebrating everyday superheroes that take pride in your work.",
+      "price": "$15.99"
+    },
+    "fleeceJacket": {
+      "name": "Sauce Labs Fleece Jacket",
+      "description": "It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.",
+      "price": "$49.99"
+    }
+  },
+  "checkoutData": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "postalCode": "90210",
+    "paymentInfo": "SauceCard #31337",
+    "shippingInfo": "Free Pony Express Delivery!",
+    "completeHeader": "Thank you for your order!",
+    "completeText": "Your order has been dispatched, and will arrive just as fast as the pony can get there!"
+  },
+  "invalidCheckoutData": {
+    "emptyFirstName": {
+      "firstName": "",
+      "lastName": "Doe",
+      "postalCode": "90210",
+      "expectedErrorMessage": "Error: First Name is required"
+    },
+    "emptyLastName": {
+      "firstName": "John",
+      "lastName": "",
+      "postalCode": "90210",
+      "expectedErrorMessage": "Error: Last Name is required"
+    },
+    "emptyPostalCode": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "postalCode": "",
+      "expectedErrorMessage": "Error: Postal Code is required"
+    }
+  }
+}
